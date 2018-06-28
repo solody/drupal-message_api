@@ -1,0 +1,6 @@
+services:
+  message_api.normalizer.message_entity:
+    class: Drupal\message_api\Normalizer\MessageEntityNormalizer
+    arguments: ['@entity.manager']
+    tags:
+      - { name: normalizer, priority: 9 }
